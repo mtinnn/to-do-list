@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<div class="form-group">
+    <p> are you sure you want to delete tasks?</p>
+<form  method="post" >
+    {% csrf_token %}
+    <input type="submit" value='delete'/>
+</form>
+{% endblock content %}
